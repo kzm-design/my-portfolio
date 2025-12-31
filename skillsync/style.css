@@ -1,0 +1,279 @@
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-white { background-color: #fff; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.size-full { width: 100%; height: 100%; }
+.h-\[356px\] { height: 356px; }
+.left-\[399px\] { left: 399px; }
+.top-\[2242px\] { top: 2242px; }
+.w-\[641px\] { width: 641px; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.max-w-none { max-width: none; }
+.object-50\%-50\% { object-position: 50% 50%; }
+.object-cover { object-fit: cover; }
+.pointer-events-none { pointer-events: none; }
+.opacity-\[0.85\] { opacity: 0.85; }
+.h-\[882px\] { height: 882px; }
+.left-\[-8px\] { left: -8px; }
+.top-\[-21px\] { top: -21px; }
+.w-\[1448px\] { width: 1448px; }
+.font-\[\'Zen_Kaku_Gothic_New\:Bold\'\,sans-serif\] { font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: bold; }
+.h-\[220px\] { height: 220px; }
+.leading-\[normal\] { line-height: normal; }
+.left-\[52px\] { left: 52px; }
+.not-italic { font-style: normal; }
+.text-\[\#fffafa\] { color: #fffafa; }
+.text-\[80px\] { font-size: 80px; }
+.text-shadow-\[6px_6px_4px_black\] { text-shadow: 6px 6px 4px black; }
+.top-\[310px\] { top: 310px; }
+.tracking-\[-4px\] { letter-spacing: -4px; }
+.w-\[1437px\] { width: 1437px; }
+.whitespace-pre-wrap { white-space: pre-wrap; }
+.h-\[111px\] { height: 111px; }
+.left-\[716px\] { left: 716px; }
+.text-\[\#fffdfd\] { color: #fffdfd; }
+.text-\[48px\] { font-size: 48px; }
+.text-center { text-align: center; }
+.text-shadow-\[4px_4px_4px_black\] { text-shadow: 4px 4px 4px black; }
+.top-\[448px\] { top: 448px; }
+.translate-x-\[-50\%\] { transform: translateX(-50%); }
+.w-\[994px\] { width: 994px; }
+.mb-0 { margin-bottom: 0; }
+.contents { display: contents; }
+.left-\[381px\] { left: 381px; }
+.top-\[626px\] { top: 626px; }
+.bg-\[rgba\(255\,115\,8\,0.83\) \] { background-color: rgba(255,115,8,0.83); }
+.h-\[164px\] { height: 164px; }
+.left-\[429px\] { left: 429px; }
+.rounded-\[30px\] { border-radius: 30px; }
+.shadow-\[8px_8px_2px_0px_rgba\(103\,48\,6\,0.83\) \] { box-shadow: 8px 8px 2px 0px rgba(103,48,6,0.83); }
+.w-\[582px\] { width: 582px; }
+.font-\[\'Noto_Sans_JP\:Bold\'\,sans-serif\] { font-family: 'Noto Sans JP', sans-serif; font-weight: bold; }
+.font-bold { font-weight: 700; }
+.h-\[108px\] { height: 108px; }
+.left-\[720px\] { left: 720px; }
+.text-\[60px\] { font-size: 60px; }
+.text-shadow-\[5px_5px_2px_\#054251\] { text-shadow: 5px 5px 2px #054251; }
+.text-white { color: white; }
+.top-\[671px\] { top: 671px; }
+.w-\[678px\] { width: 678px; }
+.h-\[159px\] { height: 159px; }
+.leading-\[80px\] { line-height: 80px; }
+.text-\[70px\] { font-size: 70px; }
+.text-black { color: black; }
+.top-\[2055px\] { top: 2055px; }
+.tracking-\[14px\] { letter-spacing: 14px; }
+.w-\[792px\] { width: 792px; }
+.font-\[\'Zen_Kaku_Gothic_New\:Medium\'\,sans-serif\] { font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 500; }
+.leading-\[60px\] { line-height: 60px; }
+.text-\[38px\] { font-size: 38px; }
+.top-\[2605px\] { top: 2605px; }
+.tracking-\[-3.8px\] { letter-spacing: -3.8px; }
+.w-\[1260px\] { width: 1260px; }
+.left-\[181px\] { left: 181px; }
+.top-\[3336px\] { top: 3336px; }
+.h-0 { height: 0; }
+.left-\[338px\] { left: 338px; }
+.top-\[3646px\] { top: 3646px; }
+.w-\[926px\] { width: 926px; }
+.inset-\[-30px_-0.97\%_-9px_0\] { inset: -30px -0.97% -9px 0; }
+.block { display: block; }
+.left-\[224px\] { left: 224px; }
+.top-\[3426px\] { top: 3426px; }
+.w-\[846px\] { width: 846px; }
+.inset-\[-30px_-1.06\%_-9px_0\] { inset: -30px -1.06% -9px 0; }
+.h-\[92px\] { height: 92px; }
+.left-\[801px\] { left: 801px; }
+.text-\[64px\] { font-size: 64px; }
+.top-\[3555px\] { top: 3555px; }
+.w-\[980px\] { width: 980px; }
+.text-\[\#1ab1d0\] { color: #1ab1d0; }
+.top-\[3873px\] { top: 3873px; }
+.w-\[754px\] { width: 754px; }
+.inset-\[-30px_-1.19\%_-9px_0\] { inset: -30px -1.19% -9px 0; }
+.h-\[79px\] { height: 79px; }
+.left-\[593px\] { left: 593px; }
+.top-\[3780px\] { top: 3780px; }
+.w-\[818px\] { width: 818px; }
+.h-\[100px\] { height: 100px; }
+.left-\[645px\] { left: 645px; }
+.w-\[928px\] { width: 928px; }
+.left-\[377px\] { left: 377px; }
+.top-\[4296px\] { top: 4296px; }
+.left-\[592px\] { left: 592px; }
+.top-\[4337px\] { top: 4337px; }
+.w-\[216px\] { width: 216px; }
+.inset-\[-60px_-4.63\%_-10px_-4.63\%\] { inset: -60px -4.63% -10px -4.63%; }
+.font-\[\'Inter\:Regular\'\,\'Noto_Sans_JP\:Regular\',sans-serif\] { font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: normal; }
+.font-normal { font-weight: 400; }
+.h-\[88px\] { height: 88px; }
+.left-\[698px\] { left: 698px; }
+.text-\[32px\] { font-size: 32px; }
+.w-\[642px\] { width: 642px; }
+.left-\[187px\] { left: 187px; }
+.top-\[5438px\] { top: 5438px; }
+.left-\[629px\] { left: 629px; }
+.top-\[5504px\] { top: 5504px; }
+.w-\[188px\] { width: 188px; }
+.inset-\[-60px_-5.32\%_-10px_-5.32\%\] { inset: -60px -5.32% -10px -5.32%; }
+.h-\[80px\] { height: 80px; }
+.w-\[228px\] { width: 228px; }
+.h-\[408px\] { height: 408px; }
+.leading-\[100px\] { line-height: 100px; }
+.text-\[24px\] { font-size: 24px; }
+.top-\[5593px\] { top: 5593px; }
+.w-\[544px\] { width: 544px; }
+.h-\[302px\] { height: 302px; }
+.left-\[667px\] { left: 667px; }
+.top-\[5641px\] { top: 5641px; }
+.w-\[106px\] { width: 106px; }
+.inset-\[-0.33\%_0_0_0\] { inset: -0.33% 0 0 0; }
+.left-\[844px\] { left: 844px; }
+.top-\[5590px\] { top: 5590px; }
+.h-\[84px\] { height: 84px; }
+.w-\[336px\] { width: 336px; }
+.h-\[74px\] { height: 74px; }
+.leading-\[30px\] { line-height: 30px; }
+.top-\[5708px\] { top: 5708px; }
+.w-\[534px\] { width: 534px; }
+.h-\[42px\] { height: 42px; }
+.top-\[5816px\] { top: 5816px; }
+.w-\[442px\] { width: 442px; }
+.h-\[90px\] { height: 90px; }
+.top-\[5914px\] { top: 5914px; }
+.w-\[402px\] { width: 402px; }
+.font-\[\'Zen_Kaku_Gothic_New\:Black\'\,sans-serif\] { font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 900; }
+.h-\[86px\] { height: 86px; }
+.left-\[707.5px\] { left: 707.5px; }
+.top-\[6333px\] { top: 6333px; }
+.w-\[829px\] { width: 829px; }
+.h-\[104px\] { height: 104px; }
+.left-\[119px\] { left: 119px; }
+.top-\[6528px\] { top: 6528px; }
+.top-\[2747px\] { top: 2747px; }
+.top-\[2792px\] { top: 2792px; }
+.left-\[1092px\] { left: 1092px; }
+.size-\[289px\] { width: 289px; height: 289px; }
+.top-\[3207px\] { top: 3207px; }
+.left-\[24px\] { left: 24px; }
+.size-\[287px\] { width: 287px; height: 287px; }
+.top-\[3479px\] { top: 3479px; }
+.left-\[1029px\] { left: 1029px; }
+.top-\[3748px\] { top: 3748px; }
+.left-\[241px\] { left: 241px; }
+.top-\[4385px\] { top: 4385px; }
+.size-\[174px\] { width: 174px; height: 174px; }
+.top-\[4977px\] { top: 4977px; }
+.left-\[473px\] { left: 473px; }
+.top-\[5015px\] { top: 5015px; }
+.h-\[134px\] { height: 134px; }
+.leading-\[55px\] { line-height: 55px; }
+.left-\[746px\] { left: 746px; }
+.text-\[28px\] { font-size: 28px; }
+.w-\[546px\] { width: 546px; }
+.left-\[245px\] { left: 245px; }
+.size-\[171px\] { width: 171px; height: 171px; }
+.left-\[524px\] { left: 524px; }
+.top-\[4424px\] { top: 4424px; }
+.h-\[89.08px\] { height: 89.08px; }
+.left-\[751.44px\] { left: 751.44px; }
+.w-\[454.878px\] { width: 454.878px; }
+.top-\[4580px\] { top: 4580px; }
+.left-\[479px\] { left: 479px; }
+.top-\[4620.95px\] { top: 4620.95px; }
+.h-\[129.225px\] { height: 129.225px; }
+.left-\[747.19px\] { left: 747.19px; }
+.w-\[536.387px\] { width: 536.387px; }
+.left-\[489px\] { left: 489px; }
+.top-\[4815.03px\] { top: 4815.03px; }
+.h-\[149.947px\] { height: 149.947px; }
+.left-\[748.97px\] { left: 748.97px; }
+.w-\[519.947px\] { width: 519.947px; }
+.size-\[170px\] { width: 170px; height: 170px; }
+.size-\[175px\] { width: 175px; height: 175px; }
+.top-\[4775px\] { top: 4775px; }
+.left-\[127px\] { left: 127px; }
+.top-\[1109px\] { top: 1109px; }
+.h-\[256px\] { height: 256px; }
+.w-\[684px\] { width: 684px; }
+.inset-\[-3.91\%_-2.92\%_-7.81\%_-2.05\%\] { inset: -3.91% -2.92% -7.81% -2.05%; }
+.font-\[\'Instrument_Serif\:Regular\'\,sans-serif\] { font-family: 'Instrument Serif', sans-serif; font-weight: normal; }
+.h-\[68px\] { height: 68px; }
+.text-\[36px\] { font-size: 36px; }
+.top-\[1169px\] { top: 1169px; }
+.tracking-\[1.6px\] { letter-spacing: 1.6px; }
+.tracking-\[3.6px\] { letter-spacing: 3.6px; }
+.w-\[698px\] { width: 698px; }
+.left-\[636px\] { left: 636px; }
+.top-\[1330px\] { top: 1330px; }
+.h-\[126px\] { height: 126px; }
+.left-\[1003px\] { left: 1003px; }
+.top-\[1395px\] { top: 1395px; }
+.w-\[680px\] { width: 680px; }
+.font-\[\'Joan\:Regular\'\,sans-serif\] { font-family: 'Joan', sans-serif; font-weight: normal; }
+.left-\[113px\] { left: 113px; }
+.top-\[1536px\] { top: 1536px; }
+.font-\[\'Notable\:Regular\'\,sans-serif\] { font-family: 'Notable', sans-serif; font-weight: normal; }
+.leading-\[0\] { line-height: 0; }
+.left-\[474.5px\] { left: 474.5px; }
+.top-\[1598px\] { top: 1598px; }
+.w-\[701px\] { width: 701px; }
+.left-\[354px\] { left: 354px; }
+.top-\[6747px\] { top: 6747px; }
+.h-\[226px\] { height: 226px; }
+.w-\[703px\] { width: 703px; }
+.h-\[60.063px\] { height: 60.063px; }
+.left-\[706px\] { left: 706px; }
+.top-\[6774.49px\] { top: 6774.49px; }
+.left-\[-99px\] { left: -99px; }
+.top-\[7280px\] { top: 7280px; }
+.h-\[168px\] { height: 168px; }
+.left-\[16.96px\] { left: 16.96px; }
+.w-\[1403.655px\] { width: 1403.655px; }
+.top-\[7323.49px\] { top: 7323.49px; }
+.w-\[1638px\] { width: 1638px; }
+.inset-\[-3.46\%\] { inset: -3.46%; }
+.left-\[22px\] { left: 22px; }
+.left-0 { left: 0; }
+.top-\[7751px\] { top: 7751px; }
+.bg-\[\#ebe9e9\] { background-color: #ebe9e9; }
+.h-\[258px\] { height: 258px; }
+.w-\[1440px\] { width: 1440px; }
+.left-\[730.32px\] { left: 730.32px; }
+.top-\[7776px\] { top: 7776px; }
+.text-\[20px\] { font-size: 20px; }
+.w-\[604.47px\] { width: 604.47px; }
+.leading-\[50px\] { line-height: 50px; }
+.left-\[452px\] { left: 452px; }
+.top-\[7836px\] { top: 7836px; }
+.w-\[552px\] { width: 552px; }
+.inset-\[-1px_0_0_0\] { inset: -1px 0 0 0; }
+.h-\[138px\] { height: 138px; }
+.left-\[483.01px\] { left: 483.01px; }
+.top-\[4417px\] { top: 4417px; }
+.w-\[495.967px\] { width: 495.967px; }
+.inset-\[-0.72\%_-0.2\%_-0.72\%_-0.65\%\] { inset: -0.72% -0.2% -0.72% -0.65%; }
+.top-\[4602px\] { top: 4602px; }
+.top-\[4800px\] { top: 4800px; }
+.top-\[5000px\] { top: 5000px; }
+.h-\[82px\] { height: 82px; }
+.left-\[545px\] { left: 545px; }
+.top-\[7502px\] { top: 7502px; }
+.w-\[349px\] { width: 349px; }
+
+/* Custom CSS for body to match Figma */
+body {
+    width: 1440px;
+    height: 8009px;
+}
+
