@@ -5,114 +5,237 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>シンザキカズミ | kzm-design</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Old+Mincho:wght@500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Nav Drawer (SP) -->
+  <div class="nav-drawer" id="navDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="閉じる">✕</button>
+    <nav class="drawer-nav">
+      <a href="#" class="drawer-link">HOME</a>
+      <a href="#works" class="drawer-link">WORKS</a>
+      <a href="#" class="drawer-link">ABOUT</a>
+    </nav>
+    <a href="mailto:i0z6yksztmk@gmail.com" class="drawer-contact-btn">お問い合わせ</a>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
   <!-- Header -->
-  <header class="header">
-    <div class="logo">
-      <span class="logo-name">シンザキカズミ</span>
-      <span class="logo-sub">SHINZAKI KAZUMI</span>
-    </div>
-    <nav class="nav">
-      <ul class="nav-links">
-        <li><a href="#works">WORKS</a></li>
-        <li><a href="#about">ABOUT</a></li>
-      </ul>
-      <a href="#contact" class="contact-btn">
-        お問い合わせは<br>こちら
+  <header class="header" id="header">
+    <a href="#" class="logo">
+      <span class="logo-ja">シンザキカズミ</span>
+      <span class="logo-en">SHINZAKI KAZUMI</span>
+    </a>
+    <div class="header-actions">
+      <a href="mailto:i0z6yksztmk@gmail.com" class="header-mail" aria-label="メール">
+        <img src="https://www.figma.com/api/mcp/asset/4d4f25ce-88ab-4bd0-ae67-e008622a07f9" alt="メール" width="40" height="32">
       </a>
+      <button class="btn-hamburger" id="hamburgerBtn" aria-label="メニューを開く">
+        <img src="https://www.figma.com/api/mcp/asset/959856e1-f68a-461b-9603-ebf19a40d500" alt="" width="26" height="26">
+      </button>
+    </div>
+    <nav class="header-nav-pc">
+      <a href="#works">WORKS</a>
+      <a href="#">ABOUT</a>
+      <a href="mailto:i0z6yksztmk@gmail.com" class="header-contact-btn">お問い合わせは<br>こちら</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-bg">
-      <img src="https://www.figma.com/api/mcp/asset/0c3bc9cf-e9f4-4016-a585-c5224d744697" alt="背景画像">
-    </div>
-    <div class="hero-content">
-      <h1 class="hero-title">
-        ひとつひとつの想いに寄り添い、<br>
-        丁寧に、心に届く温かなデザインを。
-      </h1>
-    </div>
-  </section>
+  <main>
 
-  <!-- Works Section -->
-  <section id="works" class="works">
-    <div class="section-title">
-      <h2>WORKS</h2>
-      <div class="section-title-line"></div>
-    </div>
-    <div class="works-grid">
-      <div class="work-item">
-        <div class="work-image">
-          <img src="https://www.figma.com/api/mcp/asset/8fcf7ace-c34b-4dee-a3a9-fd36270edebc" alt="SkillSync 採用LP">
-        </div>
-        <h3 class="work-title">SkillSync 採用LP</h3>
-        <p class="work-category">企画・情報設計・デザイン</p>
-        <a href="skillsync/index.html" class="work-btn">詳細を見る</a>
+    <!-- Hero -->
+    <section class="sec-hero">
+      <div class="hero-bg">
+        <img src="https://www.figma.com/api/mcp/asset/32977cb2-7bc9-4b49-b7b7-41a802e8ff6c" alt="">
+        <div class="hero-overlay"></div>
       </div>
-      <div class="work-item">
-        <div class="work-image">
-          <img src="https://www.figma.com/api/mcp/asset/4022d97c-e015-4915-95a2-4ad4313e1de0" alt="喫茶 星月夜 ブランディングサイト">
-        </div>
-        <h3 class="work-title">喫茶 星月夜 ブランディングサイト</h3>
-        <p class="work-category">コンセプト設計・デザイン</p>
-        <a href="#" class="work-btn">詳細を見る</a>
+      <div class="hero-inner">
+        <h1 class="hero-title">
+          ひとつひとつの想いに寄り添い、<br>
+          丁寧に、心に届く<br>
+          温かなデザインを。
+        </h1>
       </div>
-      <div class="work-item">
-        <div class="work-image">
-          <img src="https://www.figma.com/api/mcp/asset/62eee039-8f9a-4275-a742-3f6a15274dca" alt="つなぐて 児童発達支援サービスLP">
-        </div>
-        <h3 class="work-title">つなぐて 児童発達支援サービスLP</h3>
-        <p class="work-category">企画・情報設計・デザイン</p>
-        <a href="tsunagute/index.html" class="work-btn">詳細を見る</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Values Section -->
-  <section id="values" class="values">
-    <div class="values-content">
-      <div class="section-title">
-        <h2>VALUES</h2>
-        <div class="section-title-line"></div>
+    <!-- Works -->
+    <section id="works" class="sec-works">
+      <h2 class="sec-title">WORKS</h2>
+
+      <div class="works-cat">
+        <p class="works-cat-ttl">Web Design(LP/Website)</p>
+        <div class="works-list">
+
+          <article class="card-work">
+            <div class="card-thumb">
+              <img src="https://www.figma.com/api/mcp/asset/5d326068-f99e-4272-96cd-d71ee4696cd5" alt="喫茶 星月夜">
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">喫茶 星月夜</h3>
+              <p class="card-tag">Webデザイン / 企画</p>
+            </div>
+            <a href="#" class="btn-detail">詳細を見る</a>
+          </article>
+
+          <article class="card-work">
+            <div class="card-thumb">
+              <img src="https://www.figma.com/api/mcp/asset/cb3e689b-cecc-4b62-8ba4-50a232cc9f58" alt="動画プラットフォーム SkillSync">
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">動画プラットフォーム<br>SkillSync</h3>
+              <p class="card-tag">Webデザイン / 企画</p>
+            </div>
+            <a href="skillsync/index.html" class="btn-detail">詳細を見る</a>
+          </article>
+
+          <article class="card-work">
+            <div class="card-thumb">
+              <img src="https://www.figma.com/api/mcp/asset/3a574f47-f425-482b-9d0f-3aa94b3263ab" alt="予防接種管理アプリ Pawlog">
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">予防接種管理アプリ「Pawlog」</h3>
+              <p class="card-tag">LP制作 / UIデザイン / 企画構成</p>
+            </div>
+            <a href="#" class="btn-detail">詳細を見る</a>
+          </article>
+
+          <article class="card-work">
+            <div class="card-thumb">
+              <img src="https://www.figma.com/api/mcp/asset/c7aff015-3b46-4d79-a82f-fa344aae7d22" alt="児童発達支援施設 つなぐて">
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">児童発達支援施設「つなぐて」</h3>
+              <p class="card-tag">LP制作 / UIデザイン / 企画構成</p>
+            </div>
+            <a href="tsunagute/index.html" class="btn-detail">詳細を見る</a>
+          </article>
+
+        </div>
       </div>
-      <div class="values-circles">
-        <div class="value-circle">
-          <img src="https://www.figma.com/api/mcp/asset/08115349-4166-40a4-a926-bddd90af3858" alt="">
+
+      <div class="works-banner">
+        <p class="works-cat-ttl">Banner</p>
+        <div class="banner-list">
+          <div class="banner-item banner-wide">
+            <img src="https://www.figma.com/api/mcp/asset/8a27a728-056c-4045-b38d-6b5bda8d8f1c" alt="バナー作品1">
+          </div>
+          <div class="banner-item banner-sq">
+            <img src="https://www.figma.com/api/mcp/asset/0ee3bc48-5b4e-4dfd-b15e-5b4842e3f35a" alt="バナー作品2">
+          </div>
+          <div class="banner-item banner-sq">
+            <img src="https://www.figma.com/api/mcp/asset/8ddcbb67-cde5-4156-b6d8-0d48fb8022b4" alt="バナー作品3">
+          </div>
+          <div class="banner-item banner-sq">
+            <img src="https://www.figma.com/api/mcp/asset/56fa1672-c32d-4bde-aef7-7955030cd14a" alt="バナー作品4">
+          </div>
+          <div class="banner-item banner-sq">
+            <img src="https://www.figma.com/api/mcp/asset/ab322f80-c31c-4bbc-a336-1820b8a8a4f4" alt="バナー作品5">
+          </div>
+        </div>
+        <a href="#" class="btn-detail">詳細を見る</a>
+      </div>
+    </section>
+
+    <!-- Values
+    <section id="values" class="sec-values">
+      <h2 class="sec-title">VALUES</h2>
+      <div class="values-group">
+        <div class="values-item values-item--01">
           <span>丁寧なヒアリング</span>
         </div>
-        <div class="value-circle">
-          <img src="https://www.figma.com/api/mcp/asset/08115349-4166-40a4-a926-bddd90af3858" alt="">
-          <span>情報の整理と取捨選択</span>
-        </div>
-        <div class="value-circle">
-          <img src="https://www.figma.com/api/mcp/asset/08115349-4166-40a4-a926-bddd90af3858" alt="">
+        <div class="values-item values-item--02">
+          <img src="https://www.figma.com/api/mcp/asset/32470f91-582a-41dc-9e9f-2ee87bf9e67b" alt="" class="deco-circle" aria-hidden="true">
           <span>心に響くデザイン</span>
         </div>
+        <div class="values-item values-item--03">
+          <img src="https://www.figma.com/api/mcp/asset/bc727c71-5b75-4c9a-b1ce-7d8a883300cd" alt="" class="deco-circle" aria-hidden="true">
+          <span>情報の整理と取捨選択</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    -->
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="contact-message">
-      <p>小さなご相談から、丁寧に向き合います。</p>
-      <p>あなたの想いを形にするために、ぜひお手伝いさせてください。</p>
-    </div>
-    <a href="#" class="contact-cta">お問い合わせはこちら</a>
-  </section>
+    <!-- Contact -->
+    <section id="contact" class="sec-contact">
+      <div class="contact-lead">
+        <p>小さなご相談から、丁寧に向き合います。</p>
+        <p>あなたの想いを形にするために、<br class="sp-only">ぜひお手伝いさせてください。</p>
+      </div>
+      <div class="contact-inner">
+        <p class="contact-title">お問い合わせはこちら</p>
+        <div class="contact-arrows">
+          <img src="https://www.figma.com/api/mcp/asset/dae04ea2-7e54-4ef4-86a2-dc25821dabd6" alt="" class="arrow-icon" aria-hidden="true">
+          <img src="https://www.figma.com/api/mcp/asset/dae04ea2-7e54-4ef4-86a2-dc25821dabd6" alt="" class="arrow-icon" aria-hidden="true">
+          <img src="https://www.figma.com/api/mcp/asset/dae04ea2-7e54-4ef4-86a2-dc25821dabd6" alt="" class="arrow-icon" aria-hidden="true">
+        </div>
+        <div class="contact-mail-group">
+          <img src="https://www.figma.com/api/mcp/asset/03685233-c9ca-4ceb-ac14-8a6500c9fa28" alt="" class="mail-icon" aria-hidden="true">
+          <a href="mailto:i0z6yksztmk@gmail.com" class="mail-address">i0z6yksztmk@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <nav class="footer-nav">
-      <a href="#">HOME</a>
-      <a href="#works">WORKS</a>
-      <a href="#about">ABOUT</a>
-      <a href="#contact">CONTACT</a>
-    </nav>
-    <p class="footer-copyright">&copy; 2025 Shinzaki Kazumi</p>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="footer-logo-ja">シンザキカズミ</span>
+        <span class="footer-logo-en">SHINZAKI KAZUMI</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="#works">WORKS</a>
+        <a href="#">ABOUT</a>
+        <a href="mailto:i0z6yksztmk@gmail.com">CONTACT</a>
+      </nav>
+      <p class="footer-copy">© 2026 Shinzaki Kazumi</p>
+    </div>
   </footer>
+
+  <script>
+    // Drawer
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navDrawer = document.getElementById('navDrawer');
+    const drawerClose = document.getElementById('drawerClose');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+
+    function openDrawer() {
+      navDrawer.classList.add('is-open');
+      drawerOverlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      navDrawer.classList.remove('is-open');
+      drawerOverlay.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+
+    hamburgerBtn.addEventListener('click', openDrawer);
+    drawerClose.addEventListener('click', closeDrawer);
+    drawerOverlay.addEventListener('click', closeDrawer);
+    document.querySelectorAll('.drawer-link, .drawer-contact-btn').forEach(el => {
+      el.addEventListener('click', closeDrawer);
+    });
+
+    // Header dark/light on scroll
+    const header = document.getElementById('header');
+    const heroHeight = document.querySelector('.sec-hero').offsetHeight;
+
+    function updateHeader() {
+      if (window.scrollY > heroHeight - 80) {
+        header.classList.add('is-light');
+      } else {
+        header.classList.remove('is-light');
+      }
+    }
+
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
+  </script>
+
 </body>
 </html>
