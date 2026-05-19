@@ -1,0 +1,493 @@
+/* ================================
+   About Hero
+================================ */
+.about-hero {
+  height: 480px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.about-hero .hero-inner {
+  max-width: 340px;
+}
+
+/* ================================
+   About Section Title共通
+================================ */
+.about-sec-title {
+  font-family: var(--font-mincho);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--color-text);
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-shadow: 0 4px 8px rgba(189, 188, 188, 0.3);
+  margin-bottom: 40px;
+}
+
+/* ================================
+   My Story
+================================ */
+.sec-story {
+  padding: 80px var(--sp-side);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.story-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.story-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.story-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.story-lead {
+  font-family: var(--font-mincho);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.6;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.story-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.story-text p {
+  font-family: var(--font-noto);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  color: var(--color-text);
+}
+
+/* ================================
+   My Values
+================================ */
+.sec-about-values {
+  background: var(--color-gray-bg);
+  padding: 80px var(--sp-side);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-values-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.about-values-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.value-icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.value-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.value-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.deco-sparkle {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.value-title {
+  font-family: var(--font-maru);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.value-desc {
+  font-family: var(--font-noto);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+/* ================================
+   Skills & Tools
+================================ */
+.sec-skills {
+  padding: 80px var(--sp-side);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.skills-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skills-tool-name {
+  font-family: var(--font-noto);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 8px;
+}
+
+.skills-heading {
+  font-family: var(--font-maru);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.skills-desc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills-desc-list p {
+  font-family: var(--font-noto);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+.skills-desc-text {
+  font-family: var(--font-noto);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+.skills-works-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-works-list li {
+  font-family: var(--font-noto);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-accent);
+  border-radius: 40px;
+  padding: 6px 16px;
+}
+
+.skills-screenshots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.skills-screenshots img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.skills-message-box {
+  background: #ffe3f6;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.skills-message-box p {
+  font-family: var(--font-noto);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+/* ================================
+   Closing
+================================ */
+.sec-closing {
+  background: var(--color-gray-bg);
+  padding: 80px var(--sp-side);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.closing-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.closing-message {
+  font-family: var(--font-noto);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.closing-profile {
+  font-family: var(--font-mincho);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.closing-profile span {
+  font-family: var(--font-noto);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  display: block;
+  margin-top: 8px;
+}
+
+.closing-link-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closing-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-maru);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: var(--radius-btn);
+  padding: 16px 32px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.closing-contact-link:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.deco-sparkle-lg {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* ================================
+   PC Layout (≥1024px)
+================================ */
+@media (min-width: 1024px) {
+
+  /* About Hero PC */
+  .about-hero {
+    height: 680px;
+  }
+
+  .about-hero .hero-inner {
+    max-width: 800px;
+  }
+
+  /* About Section Title PC */
+  .about-sec-title {
+    font-size: 36px;
+    margin-bottom: 56px;
+  }
+
+  /* Story PC */
+  .sec-story {
+    padding: 120px 64px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .story-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 64px;
+  }
+
+  .story-img {
+    max-width: 400px;
+    width: 400px;
+  }
+
+  .story-lead {
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .story-text p {
+    font-size: 17px;
+  }
+
+  /* Values PC */
+  .sec-about-values {
+    padding: 120px 64px;
+  }
+
+  .about-values-content {
+    max-width: 960px;
+    gap: 32px;
+  }
+
+  .about-values-item {
+    padding: 32px 40px;
+    gap: 32px;
+  }
+
+  .value-icon {
+    width: 88px;
+    height: 88px;
+  }
+
+  .value-title {
+    font-size: 20px;
+  }
+
+  .value-desc {
+    font-size: 16px;
+  }
+
+  /* Skills PC */
+  .sec-skills {
+    padding: 120px 64px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: content-box;
+  }
+
+  .skills-content {
+    max-width: 900px;
+    gap: 80px;
+  }
+
+  .skills-tool-name {
+    font-size: 28px;
+  }
+
+  .skills-heading {
+    font-size: 20px;
+  }
+
+  .skills-desc-list p,
+  .skills-desc-text {
+    font-size: 16px;
+  }
+
+  .skills-screenshots {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .skills-message-box {
+    padding: 32px 40px;
+  }
+
+  .skills-message-box p {
+    font-size: 16px;
+  }
+
+  /* Closing PC */
+  .sec-closing {
+    padding: 120px 64px;
+    gap: 56px;
+  }
+
+  .closing-message {
+    font-size: 17px;
+  }
+
+  .closing-profile {
+    font-size: 28px;
+  }
+
+  .closing-contact-link {
+    font-size: 20px;
+    padding: 20px 48px;
+  }
+}
