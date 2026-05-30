@@ -16,6 +16,7 @@
   --color-accent: #c9be4b;
   --color-gray-bg: #f5f5f5;
   --color-link: #0477a5;
+  --color-header-contact-btn: #BA8809;
 
   --font-mincho: 'Zen Old Mincho', serif;
   --font-maru: 'Zen Maru Gothic', sans-serif;
@@ -132,7 +133,7 @@ img {
    Header
 ================================ */
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -218,8 +219,7 @@ img {
 
 /* Header light state (after scrolling past hero) */
 .header.is-light {
-  background: var(--color-bg);
-  box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+  background: transparent;
 }
 
 .header.is-light .logo-ja,
@@ -358,7 +358,7 @@ img {
 .card-thumb {
   width: 320px;
   height: 560px;
-  border-radius: var(--radius-card);
+  border-radius: 0;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0,0,0,0.25);
   flex-shrink: 0;
@@ -423,9 +423,9 @@ img {
 .banner-list {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 
 .banner-item img {
@@ -436,14 +436,9 @@ img {
   border-radius: 12px;
 }
 
-.banner-wide {
-  width: 320px;
-  height: 82px;
-}
-
 .banner-sq {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
 }
 
 /* ================================
@@ -562,7 +557,7 @@ img {
   width: 50px;
   height: 50px;
   object-fit: contain;
-  transform: scaleY(-1);
+  filter: invert(44%) sepia(60%) saturate(500%) hue-rotate(314deg) brightness(95%) contrast(90%);
 }
 
 .contact-mail-group {
@@ -576,6 +571,7 @@ img {
   width: 50px;
   height: 40px;
   object-fit: contain;
+  filter: invert(36%) sepia(90%) saturate(500%) hue-rotate(172deg) brightness(90%) contrast(95%);
 }
 
 .mail-address {
@@ -700,7 +696,7 @@ img {
   }
 
   .header-contact-btn {
-    background: var(--color-accent);
+    background: var(--color-header-contact-btn);
     color: #fff !important;
     border-radius: var(--radius-btn);
     padding: 12px 20px !important;
@@ -793,50 +789,22 @@ img {
 
   /* Banner PC */
   .banner-list {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: 864px 320px;
-    grid-template-rows: auto auto;
-    gap: 16px;
-    align-items: start;
-  }
-
-  .banner-wide {
-    width: 864px;
-    height: 223px;
-    grid-row: 1;
-    grid-column: 1;
-    align-self: end;
-  }
-
-  .banner-sq:nth-child(2) {
-    width: 320px;
-    height: 320px;
-    grid-row: 1 / 3;
-    grid-column: 2;
-  }
-
-  .banner-sq:nth-child(3),
-  .banner-sq:nth-child(4),
-  .banner-sq:nth-child(5) {
-    width: auto;
-    height: 389px;
-  }
-
-  .banner-list .banner-sq:nth-child(3),
-  .banner-list .banner-sq:nth-child(4),
-  .banner-list .banner-sq:nth-child(5) {
-    grid-row: 2;
-    grid-column: 1;
-  }
-
-  /* Second row: 3 banners across column 1 */
-  .banner-row-2 {
-    grid-row: 2;
-    grid-column: 1;
+    max-width: 1440px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  .banner-sq {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .banner-item img {
+    border-radius: 0;
   }
 
   /* Values PC */
