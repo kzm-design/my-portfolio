@@ -198,44 +198,7 @@
     </div>
   </footer>
 
-  <script>
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const navDrawer = document.getElementById('navDrawer');
-    const drawerClose = document.getElementById('drawerClose');
-    const drawerOverlay = document.getElementById('drawerOverlay');
-
-    function openDrawer() {
-      navDrawer.classList.add('is-open');
-      drawerOverlay.classList.add('is-open');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeDrawer() {
-      navDrawer.classList.remove('is-open');
-      drawerOverlay.classList.remove('is-open');
-      document.body.style.overflow = '';
-    }
-
-    hamburgerBtn.addEventListener('click', openDrawer);
-    drawerClose.addEventListener('click', closeDrawer);
-    drawerOverlay.addEventListener('click', closeDrawer);
-    document.querySelectorAll('.drawer-link, .drawer-contact-btn').forEach(el => {
-      el.addEventListener('click', closeDrawer);
-    });
-
-    // Header dark/light on scroll
-    const header = document.getElementById('header');
-    const heroHeight = document.querySelector('.sec-hero').offsetHeight;
-
-    function updateHeader() {
-      if (window.scrollY > heroHeight - 80) {
-        header.classList.add('is-light');
-      } else {
-        header.classList.remove('is-light');
-      }
-    }
-    window.addEventListener('scroll', updateHeader, { passive: true });
-    updateHeader();
-  </script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
