@@ -140,6 +140,17 @@
   color: var(--color-text-dark);
 }
 
+.wd-banner {
+  width: 320px;
+}
+
+@media (min-width: 1024px) {
+  .wd-banner {
+    width: 864px;
+  }
+}
+
+
 /* ================================
    Background
 ================================ */
