@@ -428,3 +428,12 @@
     gap: 24px;
   }
 }
+/* ─── 最初（PCサイズ）の設定 ─── */
+.pc-link { display: inline-block; } /* PC版を表示 */
+.sp-link { display: none; }         /* スマホ版は隠す */
+
+/* ─── スマホサイズ（横幅768px以下）の設定 ─── */
+@media screen and (max-width: 768px) {
+    .pc-link { display: none; }         /* PC版を隠す */
+    .sp-link { display: inline-block; } /* スマホ版を表示 */
+}
