@@ -284,7 +284,7 @@
   flex-direction: column;
   gap: 32px;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 /* ================================
