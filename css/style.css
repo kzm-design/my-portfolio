@@ -757,11 +757,25 @@ img {
   }
 
   .hero-title {
-    font-size: 46px;
+    font-size: 40px;
     letter-spacing: -1px;
     margin-top: 20px;
   }
 
+  .hero-subtitle {
+    font-family: var(--font-mincho); /* タイトルとお揃いの美しい明朝体にします */
+    font-weight: 500;
+    font-size: 18px;                 /* メインタイトル（28px）より少し小さくしてバランスをとります */
+    line-height: 1.3;                /* 2行になったときの読みやすい行間 */
+    color: #fff;                     /* 文字の色を白にします */
+    text-align: center;              /* 文字を中央揃えにします */
+    text-shadow: 1px 1px 4px rgba(74, 59, 50, 0.4); /* 濃いブラウン系の薄い影 */
+    margin-top: 24px;                /* メインタイトルとの間のすき間（お好みで調整してください） */
+    
+    /* 🌟 タイトルと同じく、ズレを防いでド真ん中に持ってくる魔法のコード */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
   /* Works PC */
   .sec-works {
     padding: 120px 64px;
