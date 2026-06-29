@@ -281,17 +281,20 @@ img {
 }
 
 .hero-title {
-  font-family: var(--font-mincho);
-  font-weight: 800;
-  font-size: 28px;
-  line-height: 1.6;
-  letter-spacing: -0.6px;
-  color: #fff;
-  text-shadow: 0 5px 10px rgba(0,0,0,0.25);
-  text-align: center;
-  margin-top: 100px;
-  width: 100vw;         /* 親要素を無視して、画面の横幅いっぱいに強制拡大 */
-  margin-left: calc(50% - 50vw); /* 画面のド真ん中に強制的に引っ張ってくる魔法のコード */
+    font-family: var(--font-mincho);
+    font-weight: 700;
+    font-size: 48px;
+    white-space: nowrap; /* ⭕ ここが「nowrap」になっていればOK */
+    line-height: 1.4;
+    letter-spacing: -0.6px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.25);
+    text-align: center;
+    margin-top: 80px; /* ここはお好みの数値でOK */
+    
+    /* ⭕ 画面の真ん中に持ってくる魔法のコード */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
 }
 
 /* 💻 パソコンではスマホ用の改行を非表示にする（これでPC版は2行になります） */
@@ -303,7 +306,7 @@ img {
 .hero-subtitle {
     font-family: var(--font-mincho); /* タイトルとお揃いの美しい明朝体にします */
     font-weight: 500;
-    font-size: 20px;                 /* メインタイトル（28px）より少し小さくしてバランスをとります */
+    font-size: 28px !important;                 /* メインタイトル（48px）より少し小さくしてバランスをとります */
     line-height: 1.6;                /* 2行になったときの読みやすい行間 */
     color: #fff;                     /* 文字の色を白にします */
     text-align: center;              /* 文字を中央揃えにします */
@@ -320,7 +323,7 @@ img {
 .sec-title {
   font-family: var(--font-mincho);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.4;
   color: var(--color-text);
   text-align: center;
@@ -364,9 +367,9 @@ img {
 .works-list {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center; /* 🌟 space-between から center に書き換えます */
+    gap: 40px;               /* 🌟 新しく追加！Figmaで測ったカード同士の隙間（30px〜40pxなど）を指定します */
 }
 
 /* Card */
@@ -767,16 +770,19 @@ img {
         display: inline;
     }
 
-    .hero-title {
-        /* ⚠️ 先ほどPC版で設定した「自動折り返し禁止」や「全幅表示の魔法」をスマホでは安全に解除します */
-        white-space: normal !important;
-        width: auto !important;
-        margin-left: 0 !important;
-        
-        /* 💡 スマホの画面幅に合わせて、文字の大きさを少し小さくしてあげると綺麗に収まります */
-        font-size: 24px; 
-        margin-top: 20px !important; /* スマホで見やすい上の余白（お好みで） */
-    }
+   /* ─── スマホ専用の部屋の中にこれを追加 ─── */
+
+.sp-br {
+    display: inline; /* スマホの時だけ改行を有効にする */
+}
+
+.hero-title {
+    white-space: normal !important; /* スマホでは画面幅に合わせて折り返しを許可 */
+    width: auto !important;          /* パソコン用の全幅設定を解除 */
+    margin-left: 0 !important;      /* パソコン用の魔法の余白を解除 */
+    
+    font-size: 28px;                 /* スマホの画面に合わせて文字を少し小さく */
+    margin-top: 20px !important;    /* スマホで見やすい上の余白（お好みで調整） */
 }
   }
 
@@ -832,12 +838,14 @@ img {
   }
 
   .card-info {
-    min-height: 188px;
+    min-height: 128px;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   .card-title {
     font-size: 20px;
-    min-height: 100px;
+    min-height: 72px;
   }
 
   .card-tag {
