@@ -294,6 +294,11 @@ img {
   margin-left: calc(50% - 50vw); /* 画面のド真ん中に強制的に引っ張ってくる魔法のコード */
 }
 
+/* 💻 パソコンではスマホ用の改行を非表示にする（これでPC版は2行になります） */
+.sp-br {
+    display: none;
+}
+
 /* ─── サブタイトルの設定 ─── */
 .hero-subtitle {
     font-family: var(--font-mincho); /* タイトルとお揃いの美しい明朝体にします */
@@ -756,16 +761,29 @@ img {
     max-width: 700px;
   }
 
-  .hero-title {
-    font-size: 40px;
-    letter-spacing: -1px;
-    margin-top: 20px;
+  @media (max-width: 768px) {
+    /* 📱 スマホの時だけ、この改行を有効化する（これで3行になります！） */
+    .sp-br {
+        display: inline;
+    }
+
+    .hero-title {
+        /* ⚠️ 先ほどPC版で設定した「自動折り返し禁止」や「全幅表示の魔法」をスマホでは安全に解除します */
+        white-space: normal !important;
+        width: auto !important;
+        margin-left: 0 !important;
+        
+        /* 💡 スマホの画面幅に合わせて、文字の大きさを少し小さくしてあげると綺麗に収まります */
+        font-size: 24px; 
+        margin-top: 20px !important; /* スマホで見やすい上の余白（お好みで） */
+    }
+}
   }
 
   .hero-subtitle {
     font-family: var(--font-mincho); /* タイトルとお揃いの美しい明朝体にします */
     font-weight: 500;
-    font-size: 18px;                 /* メインタイトル（28px）より少し小さくしてバランスをとります */
+    font-size: 16px;                 /* メインタイトル（28px）より少し小さくしてバランスをとります */
     line-height: 1.3;                /* 2行になったときの読みやすい行間 */
     color: #fff;                     /* 文字の色を白にします */
     text-align: center;              /* 文字を中央揃えにします */
@@ -776,6 +794,7 @@ img {
     width: 100vw;
     margin-left: calc(50% - 50vw);
   }
+
   /* Works PC */
   .sec-works {
     padding: 120px 64px;
