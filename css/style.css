@@ -290,7 +290,7 @@ img {
     color: #fff;
     text-shadow: 0 5px 10px rgba(0,0,0,0.25);
     text-align: center;
-    margin-top: 80px; /* ここはお好みの数値でOK */
+    margin-top: 120px; /* ここはお好みの数値でOK */
     
     /* ⭕ 画面の真ん中に持ってくる魔法のコード */
     width: 100vw;
@@ -411,6 +411,7 @@ img {
   flex-direction: column;
   gap: 4px;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .card-title {
@@ -763,33 +764,26 @@ img {
   .hero-inner {
     max-width: 700px;
   }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     /* 📱 スマホの時だけ、この改行を有効化する（これで3行になります！） */
-    .sp-br {
+  .sp-br {
         display: inline;
     }
 
-   /* ─── スマホ専用の部屋の中にこれを追加 ─── */
-
-.sp-br {
-    display: inline; /* スマホの時だけ改行を有効にする */
-}
-
-.hero-title {
+  .hero-title {
     white-space: normal !important; /* スマホでは画面幅に合わせて折り返しを許可 */
     width: auto !important;          /* パソコン用の全幅設定を解除 */
     margin-left: 0 !important;      /* パソコン用の魔法の余白を解除 */
     
-    font-size: 28px;                 /* スマホの画面に合わせて文字を少し小さく */
-    margin-top: 20px !important;    /* スマホで見やすい上の余白（お好みで調整） */
-}
-  }
+    font-size: 32px !important;                 /* スマホの画面に合わせて文字を少し小さく */
+    }
 
   .hero-subtitle {
     font-family: var(--font-mincho); /* タイトルとお揃いの美しい明朝体にします */
     font-weight: 500;
-    font-size: 16px;                 /* メインタイトル（28px）より少し小さくしてバランスをとります */
+    font-size: 16px !important ;                 /* メインタイトル（28px）より少し小さくしてバランスをとります */
     line-height: 1.3;                /* 2行になったときの読みやすい行間 */
     color: #fff;                     /* 文字の色を白にします */
     text-align: center;              /* 文字を中央揃えにします */
@@ -799,8 +793,8 @@ img {
     /* 🌟 タイトルと同じく、ズレを防いでド真ん中に持ってくる魔法のコード */
     width: 100vw;
     margin-left: calc(50% - 50vw);
-  }
-
+   }
+}
   /* Works PC */
   .sec-works {
     padding: 120px 64px;
