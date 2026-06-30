@@ -61,6 +61,7 @@
   padding: 16px 40px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
   transition: opacity 0.2s, transform 0.2s;
+  margin-top: 32px;
 }
 
 .wd-btn-view:hover {
