@@ -11,7 +11,7 @@
   text-decoration: underline;
   text-underline-offset: 6px;
   text-shadow: 0 4px 8px rgba(189, 188, 188, 0.3);
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 /* ================================
@@ -91,18 +91,19 @@
 .about-values-content {
   display: flex;
   flex-direction: column;
+   align-items: center;
   gap: 40px;
   width: 100%;
-  max-width: 640px;
+  max-width: 376px;
 }
 
 .about-values-item {
-  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 24px;
   background: #fff;
   border-radius: 20px;
-  padding: 24px;
+  padding: 32px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
@@ -112,6 +113,8 @@
   object-fit: contain;
   flex-shrink: 0;
   filter: invert(12%) sepia(70%) saturate(1200%) hue-rotate(340deg) brightness(40%) contrast(120%);
+  align-self: center !important;  /* 🌟 周りの状況を無視して、自分を強制的に真ん中にする */
+  margin: 0 auto !important;      /* 🌟 左右の余白を均等にして、強制的に中央に寄せる */
 }
 
 .value-body {
@@ -122,8 +125,9 @@
 
 .value-title-group {
   display: flex;
-  align-items: center;
+  align-self: center !important;
   gap: 8px;
+  margin-top: 12px;
 }
 
 .deco-sparkle {
@@ -249,7 +253,7 @@
 }
 
 .skills-message-box {
-  background: #ffe3f6;
+  background: #FFDF8F;
   border-radius: 16px;
   padding: 24px;
 }
@@ -388,6 +392,11 @@
   }
 
   .about-values-content {
+    display: grid;
+    grid-template-columns: repeat(3, 340px); /* 🌟 340pxのカードを横に3つ並べる命令（Figmaの幅に合わせて調整してください） */
+    gap: 24px;   
+    align-items: stretch; /* 🌟 これを新しく書き足します！ */                            /* 🌟 カード同士の横のすき間（Figmaの数値に合わせて調整） */
+    justify-content: center;                 /* 🌟 3つ並んだ全体を、画面の真ん中に寄せます */
     max-width: 960px;
     gap: 32px;
   }
@@ -395,6 +404,7 @@
   .about-values-item {
     padding: 32px 40px;
     gap: 32px;
+    align-items: center;
   }
 
   .value-icon {
@@ -468,4 +478,15 @@
     font-size: 20px;
     padding: 20px 48px;
   }
+}
+
+@media (max-width: 768px) {
+    .sp-br {
+        display: inline;
+    }
+
+    .hero-title {
+        font-size: 32px !important;
+        margin-bottom: 80px !important;
+    }
 }
